@@ -1,0 +1,32 @@
+<div class="container">
+    <h1 style="color: red;"> View Student List</h1>
+    <table class="table">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">Student ID</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">City</th>
+        <th scope="col">Address</th>
+        <th scope="col">Class</th>
+        <th scope="col">Section</th>
+      </tr>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let students ">
+        <th >{{students.sid}}</th>
+        <td>{{students.fname}}</td>
+        <td>{{students.lname}}</td>
+        <td >{{students.city}}</td>
+        <td>{{students.address}}</td>
+        <td>{{students.classs}}</td>
+        <td>{{students.section}}</td>
+  
+      </tr>
+  
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-success" (click)="gotolist()">Back</button>
+  </div>
+  

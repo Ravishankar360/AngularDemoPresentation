@@ -1,0 +1,60 @@
+<div class="mb-3">
+  <h1 style="color: Red;"> Add New Student</h1>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+ 
+  <button type="button" class="btn btn-success" (click)="signUp()">Logout</button>
+</div>
+<div class="container">
+  <form #addstudentform="ngForm" (ngSubmit)="addStudentformsubmit()">
+    <!-- {{student | json}} -->
+    <div class="mb-3">
+      <label for="sid">Student Id:</label>
+      <input type="text" class="form-control" required [(ngModel)]="student.sid" name="sid">
+    </div>
+    <div class="mb-3">
+      <label for="fname">First Name:</label>
+      <input type="text" class="form-control" required [(ngModel)]="student.fname" name="fname">
+    </div>
+    <div class="mb-3">
+      <label for="lname">Last Name:</label>
+      <input type="text" class="form-control" required [(ngModel)]="student.lname" name="lname">
+    </div>
+    <div class="mb-3">
+      <label for="sid">City:</label>
+      <input type="text" class="form-control" required [(ngModel)]="student.city" name="city">
+    </div>
+    <div class="mb-3">
+      <label for="fname">Address:</label>
+      <input type="text" class="form-control" required [(ngModel)]="student.address" name="address">
+    </div>
+    <div class="mb-3">
+      <label for="lname">Class:</label>
+      <input type="text" class="form-control" required [(ngModel)]="student.classs" name="class">
+    </div>
+
+    <div class="mb-3">
+      <label for="lname">Section:</label>
+      <input type="text" class="form-control" required [(ngModel)]="student.section" name="section">
+    </div>
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-secondary" (click)="gotolist()">Back</button>
+  </form>
+</div>
+
+

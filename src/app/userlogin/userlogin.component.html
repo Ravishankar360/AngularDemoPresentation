@@ -1,0 +1,18 @@
+<!-- <p>userlogin works!</p> -->
+<div class="container col-md-7">
+    <h1 style="COLOR:RED;"> Employee Login</h1>
+    <form (ngSubmit)="userlogin()">
+        <div class="mb-3">
+            <label for = "exampleFormControlInput1" class="form-lebel">UserId</label>
+            <input type="text" [(ngModel)]="user.userId" class="form-control" id="userId" name="userName">
+        </div>
+
+        <div class="mb-3">
+            <label for = "exampleFormControlInput2" class="form-lebel">Password</label>
+            <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" mat-raised-btn color="primary">Login</button> &nbsp;&nbsp; 
+        New <a href="empRegister"> Employee Registration</a>
+    </form>
+
+</div>
